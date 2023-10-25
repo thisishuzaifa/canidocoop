@@ -2,35 +2,39 @@ import Link from "next/link";
 
 export default function HomePage() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c] text-white">
-      <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 ">
-        <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
-          Create <span className="text-[hsl(280,100%,70%)]">T3</span> App
+    <main className="flex flex-col justify-center items-center max-w-6xl mx-auto px-4">
+      <div className="bg-gradient-to-r from-red-700 to-gray-900 text-white py-8 px-4 rounded-lg shadow-lg">
+        <h1 className="text-3xl md:text-5xl font-bold mb-4 md:mb-8 text-center font-serif">
+          Can you do <br /> co-op?
         </h1>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-8">
-          <Link
-            className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
-            href="https://create.t3.gg/en/usage/first-steps"
-            target="_blank"
-          >
-            <h3 className="text-2xl font-bold">First Steps →</h3>
-            <div className="text-lg">
-              Just the basics - Everything you need to know to set up your
-              database and authentication.
-            </div>
-          </Link>
-          <Link
-            className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
-            href="https://create.t3.gg/en/introduction"
-            target="_blank"
-          >
-            <h3 className="text-2xl font-bold">Documentation →</h3>
-            <div className="text-lg">
-              Learn more about Create T3 App, the libraries it uses, and how to
-              deploy it.
-            </div>
-          </Link>
-        </div>
+        <p className="text-base md:text-lg text-center">
+          Use this web app to determine your co-op eligibility. Please choose the college that best represents you. Each college
+          has a different set of requirements depending on the program offerings. A short questionnaire will show your eligibility.
+          The website will also show course offerings and give you a roadmap so that you can go on co-op ASAP.
+        </p>
+      </div>
+
+      <div className="flex flex-col md:flex-row justify-center items-center mt-10 space-y-2 space-x-4">
+        <Link href="/khoury-college">
+          <button className="bg-red-700 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110 w-full md:w-auto">
+            Khoury College of Computer Sciences
+          </button>
+        </Link>
+        <Link href="/coe">
+          <button className="bg-red-700 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110 w-full md:w-auto">
+            College of Engineering
+          </button>
+        </Link>
+        <Link href="/camd">
+          <button className="bg-red-700 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110 w-full md:w-auto">
+            College of Art Media and Design
+          </button>
+        </Link>
+        <Link href="/cps">
+          <button className="bg-red-700 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110 w-full md:w-auto">
+            College of Professional Studies
+          </button>
+        </Link>
       </div>
     </main>
   );
