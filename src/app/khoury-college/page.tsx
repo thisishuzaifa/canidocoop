@@ -46,7 +46,7 @@ const KhouryCheck = () => {
 
     if (currentQuestion === questions.length - 1) {
       const isEligible = answers.every(
-        (answer, index) => answer === questions[index].correctAnswer
+        (answer, index) => answer === questions[index]?.correctAnswer
       );
       setEligibility(isEligible);
     } else {
