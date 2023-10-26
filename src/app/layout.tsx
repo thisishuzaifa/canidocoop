@@ -21,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`font-sans ${inter.variable} bg-white`}>
+      <body className={`font-sans ${inter.variable} bg-white justify-center items-center overflow-auto`}>
         <Navigation />
         {children}
         </body>

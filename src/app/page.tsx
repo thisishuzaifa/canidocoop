@@ -21,7 +21,7 @@ const Page = () => {
       
     <div className="min-h-screen bg-white flex flex-col justify-center items-center">
       <motion.h1 
-          className="text-6xl md:text-5xl font-semibold mb-4 md:mb-8 text-center font-serif 	text-decoration-line: underline"
+          className="text-6xl md:text-5xl font-semibold mb-4 md:mb-8 text-center font-serif text-decoration-line: underline"
           initial={{ y: -50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, ease: "easeInOut" }}>
@@ -94,6 +94,14 @@ const Page = () => {
 
         </motion.div>
       </div>
+      <p className="text-center text-sm max-w-4xl mx-auto text-gray-500 pt-8">
+      This website is not affiliated with Northeastern University. This was created as a side project to help students determine their co-op eligibility.
+      <br></br>
+      For accurate course information please refer to the Northeastern University website. Requirements change without notice. This website will be updated accordingly but may not reflect those changes immediately.
+      <br></br>
+      Created by Huzaifa Khalid
+
+    </p>
     </div>
     </>
   );

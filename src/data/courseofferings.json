@@ -1,0 +1,86 @@
+{
+    "programs": [
+        {
+            "name": "Master of Science in Computer Science",
+            "courses": [
+                {
+                    "code": "CS5001",
+                    "title": "Introduction to Computer Science"
+                },
+                {
+                    "code": "CS5002",
+                    "title": "Advanced Algorithms"
+                },
+                {
+                    "code": "CS5003",
+                    "title": "Database Systems"
+                }
+            ]
+        },
+        {
+            "name": "Align Master of Science in Computer Science",
+            "courses": [
+                {
+                    "code": "CS6001",
+                    "title": "Align Foundations I"
+                },
+                {
+                    "code": "CS6002",
+                    "title": "Align Foundations II"
+                }
+            ]
+        },
+        {
+            "name": "Master of Science in Data Analytics Engineering",
+            "courses": [
+                {
+                    "code": "DAE5001",
+                    "title": "Data Analysis Methods"
+                },
+                {
+                    "code": "DAE5002",
+                    "title": "Machine Learning for Data Analytics"
+                }
+            ]
+        },
+        {
+            "name": "Master of Science in Information Systems",
+            "courses": [
+                {
+                    "code": "IS5001",
+                    "title": "Systems Design"
+                },
+                {
+                    "code": "IS5002",
+                    "title": "Enterprise Software Development"
+                }
+            ]
+        },
+        {
+            "name": "Master of Science in Information Design and Data Visualization",
+            "courses": [
+                {
+                    "code": "IDDV5001",
+                    "title": "Principles of Information Design"
+                },
+                {
+                    "code": "IDDV5002",
+                    "title": "Advanced Data Visualization Techniques"
+                }
+            ]
+        },
+        {
+            "name": "Master of Professional Studies in Analytics",
+            "courses": [
+                {
+                    "code": "MPSA5001",
+                    "title": "Analytics Frameworks"
+                },
+                {
+                    "code": "MPSA5002",
+                    "title": "Quantitative Methods in Analytics"
+                }
+            ]
+        }
+    ]
+}

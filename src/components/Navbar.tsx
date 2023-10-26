@@ -30,7 +30,7 @@ const Navigation = () => {
 
   return (
     <motion.nav
-      className="bg-white shadow-2xl border-b border-gray-600"
+      className="bg-white shadow-xl border-b border-gray-600"
       variants={navVariants}
       initial="hidden"
       animate="visible"
@@ -50,11 +50,20 @@ const Navigation = () => {
               </Link>
               <Link href="/courses">
                 <motion.a
-                  className="inline-flex items-center px-1 pt-1  text-lg font-bold text-white-900 hover:text-gray-700"
+                  className="inline-flex items-center px-1 pt-1 text-lg font-bold text-white-900 hover:text-gray-700"
                   variants={linkVariants}
                   whileHover="hover"
                 >
                   Courses
+                </motion.a>
+              </Link>
+              <Link href="/about">
+                <motion.a
+                  className="inline-flex items-center px-1 pt-1 text-lg font-bold text-white-900 hover:text-gray-700"
+                  variants={linkVariants}
+                  whileHover="hover"
+                >
+                  About
                 </motion.a>
               </Link>
             </div>
