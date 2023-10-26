@@ -1,4 +1,5 @@
 import "@/styles/globals.css";
+import Navigation from "@/components/Navbar";
 
 import { Inter } from "next/font/google";
 
@@ -20,7 +21,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`font-sans ${inter.variable} bg-stone-800`}>{children}</body>
+      <body className={`font-sans ${inter.variable} bg-white`}>
+        <Navigation />
+        {children}
+        </body>
     </html>
   );
 }
