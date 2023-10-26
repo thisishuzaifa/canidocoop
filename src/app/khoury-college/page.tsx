@@ -71,7 +71,7 @@ const KhouryCheck = () => {
         {eligibility === null ? (
           <div>
             <h1 className="text-3xl font-bold mb-4 text-center">
-              {questions[currentQuestion].question}
+              {questions[currentQuestion]?.question}
             </h1>
             <div className="flex justify-center items-center space-x-4">
               <motion.button
