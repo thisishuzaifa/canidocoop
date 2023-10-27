@@ -67,7 +67,7 @@ const CourseTile = () => {
         {courseData.programs.map((program: Program) => (
           <motion.button
             key={program.name}
-            className="bg-red-600 hover:bg-slate-700 text-white py-2 px-4 rounded transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110 w-full md:w-auto"
+            className="bg-teal-700 hover:bg-slate-700 text-white py-2 px-4 rounded transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110 w-full md:w-auto"
             variants={buttonVariants}
             whileHover="hover"
             onClick={() => handleButtonClick(program.courses)}
@@ -94,18 +94,29 @@ const CourseTile = () => {
             <h3 className="text-3xl mb-4">Course Offerings:</h3>
             <ul>
               {selectedCourses.map((course: Course) => (
-                <li key={course.code} className="mb-2">
+                <li key={course.code} className="mb-2 text-xl">
                   {course.code}: {course.title}
                 </li>
               ))}
             </ul>
             <button
-              className="mt-4 bg-red-600 hover:bg-slate-700 text-white py-2 px-4 rounded"
+              className="mt-4 bg-teal-700 hover:bg-slate-700 text-white py-2 px-4 rounded"
               onClick={() => setShowModal(false)}
             >
               Close
             </button>
           </motion.div>
+          
+          <motion.p
+            className="text-base md:text-lg text-center"
+            initial={{ y: -50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5, ease: "easeInOut", delay: 0.2 }}
+          >
+            Course list is compiled from Northeastern University Website. It might not always be up to date.
+            For accurate course offerings, and eligibility to take a course, please refer to an advisor.
+            This just gives you a general idea of what courses are offered for the year so you can plan your co-op term.
+          </motion.p>
         </>
       )}
     </div>

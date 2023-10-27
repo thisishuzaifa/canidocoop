@@ -20,16 +20,6 @@ const Page = () => {
     <>
       
     <div className="min-h-screen bg-white flex flex-col justify-center items-center">
-      <motion.h1 
-          className="text-6xl md:text-5xl font-semibold mb-4 md:mb-8 text-center font-serif text-decoration-line: underline"
-          initial={{ y: -50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.5, ease: "easeInOut" }}>
-
-        Northeastern University 
-
-        </motion.h1>
-
       <div className="bg-white shadow-lg rounded-lg p-8 max-w-3xl w-full">
         <motion.h1
           className="text-3xl md:text-5xl font-bold mb-4 md:mb-8 text-center font-serif"
@@ -57,7 +47,7 @@ const Page = () => {
         >
           <Link href="/khoury-college">
             <motion.button
-              className="bg-red-600 hover:bg-slate-700 text-white  py-2 px-4 rounded transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110 w-full md:w-auto"
+              className="bg-teal-600 hover:bg-slate-700 text-white  py-2 px-4 rounded transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110 w-full md:w-auto"
               variants={buttonVariants}
               whileHover="hover"
             >
@@ -66,7 +56,7 @@ const Page = () => {
           </Link>
           <Link href="/coe">
             <motion.button
-              className="bg-red-600 hover:bg-slate-700 text-white py-2 px-4 rounded transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110 w-full md:w-auto"
+              className="bg-teal-600 hover:bg-slate-700 text-white py-2 px-4 rounded transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110 w-full md:w-auto"
               variants={buttonVariants}
               whileHover="hover"
             >
@@ -75,7 +65,7 @@ const Page = () => {
           </Link>
           <Link href="/camd">
             <motion.button
-              className="bg-red-600 hover:bg-slate-700 text-white py-2 px-4 rounded transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110 w-full md:w-auto"
+              className="bg-teal-600 hover:bg-slate-700 text-white py-2 px-4 rounded transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110 w-full md:w-auto"
               variants={buttonVariants}
               whileHover="hover"
             >
@@ -84,7 +74,7 @@ const Page = () => {
           </Link>
           <Link href="/cps">
             <motion.button
-              className="bg-red-600 hover:bg-slate-700 text-white py-2 px-4 rounded transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110 w-full md:w-auto"
+              className="bg-teal-600 hover:bg-slate-700 text-white py-2 px-4 rounded transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110 w-full md:w-auto"
               variants={buttonVariants}
               whileHover="hover"
             >
