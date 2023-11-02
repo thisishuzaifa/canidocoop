@@ -5,15 +5,22 @@
             "courses": [
                 {
                     "code": "CS5001",
-                    "title": "Introduction to Computer Science"
+                    "title": "Introduction to Computer Science",
+                    "prerequisites": ["CS5000"],
+                    "offered": ["Fall", "Spring", "Summer"]
+
                 },
                 {
                     "code": "CS5002",
-                    "title": "Advanced Algorithms"
+                    "title": "Advanced Algorithms",
+                    "prerequisites": ["CS5001"],
+                    "offered": ["Fall", "Spring", "Summer"]
                 },
                 {
                     "code": "CS5003",
-                    "title": "Database Systems"
+                    "title": "Database Systems",
+                    "prerequisites": ["CS5002"],
+                    "offered": ["Fall", "Spring", "Summer"]
                 }
             ]
         },
@@ -22,11 +29,15 @@
             "courses": [
                 {
                     "code": "CS6001",
-                    "title": "Align Foundations I"
+                    "title": "Align Foundations I",
+                    "prerequisites": ["CS5000"],
+                    "offered": ["Fall", "Spring", "Summer"]
                 },
                 {
                     "code": "CS6002",
-                    "title": "Align Foundations II"
+                    "title": "Align Foundations II",
+                    "prerequisites": ["CS5000"],
+                    "offered": ["Fall", "Spring", "Summer"]
                 }
             ]
         },
@@ -35,11 +46,15 @@
             "courses": [
                 {
                     "code": "DAE5001",
-                    "title": "Data Analysis Methods"
+                    "title": "Data Analysis Methods",
+                    "prerequisites": ["None"],
+                    "offered": ["Fall", "Spring"]
                 },
                 {
                     "code": "DAE5002",
-                    "title": "Machine Learning for Data Analytics"
+                    "title": "Machine Learning for Data Analytics",
+                    "prerequisites": ["None"],
+                    "offered": ["Fall", "Spring"]
                 }
             ]
         },
@@ -48,11 +63,15 @@
             "courses": [
                 {
                     "code": "IS5001",
-                    "title": "Systems Design"
+                    "title": "Systems Design",
+                    "prerequisites": ["None"],
+                    "offered": ["Fall", "Spring"]
                 },
                 {
                     "code": "IS5002",
-                    "title": "Enterprise Software Development"
+                    "title": "Enterprise Software Development",
+                    "prerequisites": ["None"],
+                    "offered": ["Fall", "Spring"]
                 }
             ]
         },
@@ -61,11 +80,15 @@
             "courses": [
                 {
                     "code": "IDDV5001",
-                    "title": "Principles of Information Design"
+                    "title": "Principles of Information Design",
+                    "prerequisites": ["None"],
+                    "offered": ["Fall", "Spring"]
                 },
                 {
                     "code": "IDDV5002",
-                    "title": "Advanced Data Visualization Techniques"
+                    "title": "Advanced Data Visualization Techniques",
+                    "prerequisites": ["None"],
+                    "offered": ["Fall", "Spring"]
                 }
             ]
         },
@@ -74,11 +97,15 @@
             "courses": [
                 {
                     "code": "MPSA5001",
-                    "title": "Analytics Frameworks"
+                    "title": "Analytics Frameworks",
+                    "prerequisites": ["None"],
+                    "offered": ["Fall", "Spring"]
                 },
                 {
                     "code": "MPSA5002",
-                    "title": "Quantitative Methods in Analytics"
+                    "title": "Quantitative Methods in Analytics",
+                    "prerequisites": ["None"],
+                    "offered": ["Fall", "Spring"]
                 }
             ]
         }

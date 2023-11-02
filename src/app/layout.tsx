@@ -1,12 +1,8 @@
 import "@/styles/globals.css";
 import Navigation from "@/components/Navbar";
+import { GeistSans } from 'geist/font'
 
-import { Inter } from "next/font/google";
 
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-sans",
-});
 
 export const metadata = {
   title: "Can I do Co-op?",
@@ -20,8 +16,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={`font-sans ${inter.variable} bg-white justify-center items-center overflow-auto`}>
+    <html lang="en" className={`${GeistSans.variable}`}>
+      <body className= "bg-stone-200 justify-center items-center overflow-auto">
         <Navigation />
         {children}
         </body>

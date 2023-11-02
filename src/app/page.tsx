@@ -20,9 +20,9 @@ const Page = () => {
     <>
       
     <div className="min-h-screen bg-white flex flex-col justify-center items-center">
-      <div className="bg-white shadow-lg rounded-lg p-8 max-w-3xl w-full">
+      <div className="bg-stone-200 shadow-lg rounded-lg p-8 max-w-3xl w-full">
         <motion.h1
-          className="text-3xl md:text-5xl font-bold mb-4 md:mb-8 text-center font-serif"
+          className="text-3xl md:text-5xl font-bold mb-4 md:mb-8 text-center"
           initial={{ y: -50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, ease: "easeInOut" }}
@@ -47,38 +47,38 @@ const Page = () => {
         >
           <Link href="/khoury-college">
             <motion.button
-              className="bg-teal-600 hover:bg-slate-700 text-white  py-2 px-4 rounded transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110 w-full md:w-auto"
+              className="bg-teal-600 text-sm hover:bg-slate-700 text-white py-2 px-4 rounded transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110 w-full md:w-auto"
               variants={buttonVariants}
               whileHover="hover"
             >
-              Khoury College of Computer Sciences
+              Khoury 
             </motion.button>
           </Link>
           <Link href="/coe">
             <motion.button
-              className="bg-teal-600 hover:bg-slate-700 text-white py-2 px-4 rounded transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110 w-full md:w-auto"
+              className="bg-teal-600 text-sm hover:bg-slate-700 text-white py-2 px-4 rounded transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110 w-full md:w-auto"
               variants={buttonVariants}
               whileHover="hover"
             >
-              College of Engineering
+              COE
             </motion.button>
           </Link>
           <Link href="/camd">
             <motion.button
-              className="bg-teal-600 hover:bg-slate-700 text-white py-2 px-4 rounded transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110 w-full md:w-auto"
+              className="bg-teal-600 text-sm hover:bg-slate-700 text-white py-2 px-4 rounded transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110 w-full md:w-auto"
               variants={buttonVariants}
               whileHover="hover"
             >
-              College of Art Media and Design
+              CAMD
             </motion.button>
           </Link>
           <Link href="/cps">
             <motion.button
-              className="bg-teal-600 hover:bg-slate-700 text-white py-2 px-4 rounded transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110 w-full md:w-auto"
+              className="bg-teal-600 text-sm hover:bg-slate-700 text-white py-2 px-4 rounded transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110 w-full md:w-auto"
               variants={buttonVariants}
               whileHover="hover"
             >
-              College of Professional Studies
+              CPS
             </motion.button>
           </Link>
 

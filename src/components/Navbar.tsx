@@ -33,7 +33,7 @@ const Navigation = () => {
 
   return (
     <motion.nav
-      className="bg-white shadow-lg mt-4 rounded-lg"
+      className="bg-stone-300 shadow-lg "
       variants={navVariants}
       initial="hidden"
       animate="visible"
@@ -44,7 +44,7 @@ const Navigation = () => {
             <div className="hidden sm:-my-px sm:ml-6 sm:flex sm:space-x-8">
             <Link href="/">
                 <motion.a
-                  className="inline-flex items-center px-1 pt-1 text-lg font-serif font-bold text-gray-900 hover:text-gray-700"
+                  className="inline-flex items-center px-1 pt-1 text-lg font-light text-gray-900 hover:text-gray-700"
                   variants={linkVariants}
                   whileHover="hover"
                 >
@@ -53,7 +53,7 @@ const Navigation = () => {
               </Link>
               <Link href="/courses">
                 <motion.a
-                  className="inline-flex items-center px-1 pt-1 text-lg font-serif font-bold text-gray-900 hover:text-gray-700"
+                  className="inline-flex items-center px-1 pt-1 text-lg font-light text-gray-900  hover:text-gray-700"
                   variants={linkVariants}
                   whileHover="hover"
                 >
@@ -62,14 +62,16 @@ const Navigation = () => {
               </Link>
               <Link href="/about">
                 <motion.a
-                  className="inline-flex items-center px-1 pt-1 text-lg font-serif font-bold text-gray-900 hover:text-gray-700"
+                  className="inline-flex items-center px-1 pt-1 text-lg font-light text-gray-900  hover:text-gray-700"
                   variants={linkVariants}
                   whileHover="hover"
                 >
                   About
                 </motion.a>
               </Link>
+
             </div>
+            
           </div>
           <div className="-mr-2 flex items-center sm:hidden">
             <button
@@ -113,7 +115,7 @@ const Navigation = () => {
         <div className="px-2 pt-2 pb-3">
           <Link href="/courses">
             <motion.a
-              className="block px-3 py-2 rounded-md text-base font-bold text-gray-900 hover:text-gray-700"
+              className="block px-3 py-2 rounded-md text-base font-light text-gray-900 hover:text-gray-700"
               variants={linkVariants}
               whileHover="hover"
             >
@@ -122,7 +124,7 @@ const Navigation = () => {
           </Link>
           <Link href="/about">
             <motion.a
-              className="block px-3 py-2 rounded-md text-base font-bold text-gray-900 hover:text-gray-700"
+              className="block px-3 py-2 rounded-md text-base font-light text-gray-900 hover:text-gray-700"
               variants={linkVariants}
               whileHover="hover"
             >
