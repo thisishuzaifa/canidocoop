@@ -1,79 +1,61 @@
 'use client';
-import { useState } from "react";
-import Link from "next/link";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import { useState } from "react";
 
-const Navigation = () => {
+const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-
-  const navVariants = {
-    hidden: {
-      y: -50,
-      opacity: 0,
-    },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.5,
-        ease: "easeInOut",
-      },
-    },
-  };
 
   const linkVariants = {
     hover: {
       scale: 1.1,
+      textShadow: "0px 0px 8px rgb(255,255,255)",
+      boxShadow: "0px 0px 8px rgb(255,255,255)",
       transition: {
+        yoyo: Infinity,
         duration: 0.3,
-        ease: "easeInOut",
       },
     },
   };
 
   return (
-    <motion.nav
-      className="bg-stone-300 shadow-lg "
-      variants={navVariants}
-      initial="hidden"
-      animate="visible"
-    >
+    <nav className="bg-white shadow">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16">
-          <div className="flex">
-            <div className="hidden sm:-my-px sm:ml-6 sm:flex sm:space-x-8">
-            <Link href="/">
-                <motion.a
-                  className="inline-flex items-center px-1 pt-1 text-lg font-light text-gray-900 hover:text-gray-700"
-                  variants={linkVariants}
-                  whileHover="hover"
-                >
-                  Home
-                </motion.a>
-              </Link>
-              <Link href="/courses">
-                <motion.a
-                  className="inline-flex items-center px-1 pt-1 text-lg font-light text-gray-900  hover:text-gray-700"
-                  variants={linkVariants}
-                  whileHover="hover"
-                >
-                  Courses
-                </motion.a>
-              </Link>
-              <Link href="/about">
-                <motion.a
-                  className="inline-flex items-center px-1 pt-1 text-lg font-light text-gray-900  hover:text-gray-700"
-                  variants={linkVariants}
-                  whileHover="hover"
-                >
-                  About
-                </motion.a>
-              </Link>
-
+        <div className="flex items-center justify-between h-16">
+          <div className="flex items-center">
+            <div className="hidden md:block">
+              <div className="ml-10 flex items-baseline space-x-8 border-b-4 border-teal-500 pb-4">
+                <Link href="/">
+                  <motion.a
+                    className="text-gray-800 text-2xl hover:text-indigo-600 dark:hover:text-indigo-400"
+                    variants={linkVariants}
+                    whileHover="hover"
+                  >
+                    Home
+                  </motion.a>
+                </Link>
+                <Link href="/about">
+                  <motion.a
+                    className="text-gray-800 text-2xl hover:text-indigo-600 dark:hover:text-indigo-400"
+                    variants={linkVariants}
+                    whileHover="hover"
+                  >
+                    About
+                  </motion.a>
+                </Link>
+                <Link href="/courses">
+                  <motion.a
+                    className="text-gray-800 text-2xl hover:text-indigo-600 dark:hover:text-indigo-400"
+                    variants={linkVariants}
+                    whileHover="hover"
+                  >
+                    Courses
+                  </motion.a>
+                </Link>
+              </div>
             </div>
-            
           </div>
-          <div className="-mr-2 flex items-center sm:hidden">
+          <div className="-mr-2 flex md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
               type="button"
@@ -81,6 +63,7 @@ const Navigation = () => {
               aria-label="Main menu"
               aria-expanded="false"
             >
+              {/* Icon when menu is closed. */}
               <svg
                 className={`${isOpen ? "hidden" : "block"} h-6 w-6`}
                 stroke="currentColor"
@@ -94,6 +77,7 @@ const Navigation = () => {
                   d="M4 6h16M4 12h16M4 18h16"
                 />
               </svg>
+              {/* Icon when menu is open. */}
               <svg
                 className={`${isOpen ? "block" : "hidden"} h-6 w-6`}
                 stroke="currentColor"
@@ -111,30 +95,41 @@ const Navigation = () => {
           </div>
         </div>
       </div>
-      <div className={`${isOpen ? "block" : "hidden"} sm:hidden`}>
-        <div className="px-2 pt-2 pb-3">
-          <Link href="/courses">
+      {/* Mobile menu, show/hide based on menu state. */}
+      <div className={`${isOpen ? "block" : "hidden"} md:hidden`}>
+        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <Link href="/">
             <motion.a
-              className="block px-3 py-2 rounded-md text-base font-light text-gray-900 hover:text-gray-700"
+              className="text-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 block px-3 py-2 rounded-md text-base font-medium"
               variants={linkVariants}
               whileHover="hover"
             >
-              Courses
+              Home
             </motion.a>
           </Link>
           <Link href="/about">
             <motion.a
-              className="block px-3 py-2 rounded-md text-base font-light text-gray-900 hover:text-gray-700"
+              className="text-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 block px-3 py-2 rounded-md text-base font-medium"
               variants={linkVariants}
               whileHover="hover"
             >
               About
             </motion.a>
           </Link>
+          <Link href="/courses">
+            <motion.a
+              className="text-gray-800 hover:text-indigo-600 dark:hover:text-indigo-400 block px-3 py-2 rounded-md text-base font-medium"
+              variants={linkVariants}
+              whileHover="hover"
+            >
+              Courses
+            </motion.a>
+          </Link>
+          {/* More mobile navigation items here */}
         </div>
       </div>
-    </motion.nav>
+    </nav>
   );
 };
 
-export default Navigation;
+export default Navbar;
