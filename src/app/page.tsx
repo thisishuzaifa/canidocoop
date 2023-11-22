@@ -19,8 +19,8 @@ const Page = () => {
   return (
     <>
       
-    <div className="min-h-screen bg-white flex flex-col justify-center items-center">
-      <div className="bg-stone-200 shadow-lg rounded-lg p-8 max-w-3xl w-full">
+    <div className="min-h-screen bg-white flex flex-col justify-center items-center p-4">
+      <div className="bg-slate-100 shadow-lg rounded-lg p-8 max-w-3xl w-full">
         <motion.h1
           className="text-3xl md:text-5xl font-bold mb-4 md:mb-8 text-center"
           initial={{ y: -50, opacity: 0 }}
@@ -38,6 +38,7 @@ const Page = () => {
           Use this web app to determine your co-op eligibility. Please choose the college that best represents you. Each college
           has a different set of requirements depending on the program offerings. A short questionnaire will show your eligibility.
           The website will also show course offerings and give you a roadmap so that you can go on co-op ASAP.
+          
         </motion.p>
         <motion.div
           className="flex flex-col md:flex-row justify-center items-center mt-10 space-y-2 md:space-y-0 md:space-x-4"

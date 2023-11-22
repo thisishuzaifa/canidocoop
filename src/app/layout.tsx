@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${GeistSans.variable}`}>
-      <body className= "bg-stone-200 p-2 justify-center items-center max-width-7xl overflow-auto">
+      <body className= "pb-8 justify-center items-center overflow-auto">
         <Navigation />
         {children}
         </body>
